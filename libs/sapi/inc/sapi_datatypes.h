@@ -80,8 +80,8 @@ extern "C" {
 typedef uint8_t bool_t;
 
 /* Define real Data Types (floating point) */
-//typedef real32_t float;
-//typedef real64_t double;
+typedef float  real32_t;
+//typedef double real64_t; // In LPC4337 float = double (Floating Point single precision, 32 bits)
 
 /* Define Tick Data Type */
 typedef uint64_t tick_t;

@@ -6,7 +6,7 @@
 
 /*==================[inlcusiones]============================================*/
 
-#include "programa.h"   // <= su propio archivo de cabecera
+#include "mefAscensor.h"   // <= su propio archivo de cabecera
 #include "sapi.h"       // <= Biblioteca sAPI
 
 /*==================[definiciones y macros]==================================*/
@@ -19,30 +19,18 @@
 
 /*==================[declaraciones de funciones externas]====================*/
 
-/*==================[funcion principal]======================================*/
-
-// FUNCION PRINCIPAL, PUNTO DE ENTRADA AL PROGRAMA LUEGO DE ENCENDIDO O RESET.
-int main( void ){
-
-   // ---------- CONFIGURACIONES ------------------------------
-   boardConfig();   // Inicializar y configurar la plataforma
-   
-   ascensorInicializarMEF();   // Inicializar la MEF de ascensor
-   
-   // ---------- REPETIR POR SIEMPRE --------------------------
-   while( TRUE )
-   {      
-      ascensorActualizarMEF();   // Actualizar la MEF de ascensor
-   } 
-
-   // NO DEBE LLEGAR NUNCA AQUI, debido a que a este programa se ejecuta 
-   // directamenteno sobre un microcontroladore y no es llamado/ por ningun
-   // Sistema Operativo, como en el caso de un programa para PC.
-   return 0;
-}
-
 /*==================[definiciones de funciones internas]=====================*/
 
 /*==================[definiciones de funciones externas]=====================*/
+
+// Inicializar la MEF de ascensor
+void ascensorInicializarMEF( void ){
+   // TODO: hacer!!
+}
+
+// Actualizar la MEF de ascensor
+void ascensorActualizarMEF( void ){
+   // TODO: hacer!!
+}
 
 /*==================[fin del archivo]========================================*/

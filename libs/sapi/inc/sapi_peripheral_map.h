@@ -83,12 +83,12 @@ typedef enum{
    ENET_RXD0,
 
    // Switches
-   // 36     37     38     39
+   // 36   37     38     39
    TEC1,  TEC2,  TEC3,  TEC4,
 
    // Leds
-   // 40     41     42     43     44     45
-   LED1,  LED2,  LED3,  LEDR,  LEDG,  LEDB,
+   // 40   41     42     43     44     45
+   LEDR,  LEDG,  LEDB,  LED1,  LED2,  LED3,
 
    /* CIAA-NXP */
  /* 46     47     48     49     50     51     52     53 */

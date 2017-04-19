@@ -4,8 +4,8 @@
  * Fecha: 
  *===========================================================================*/
 
-#ifndef _PROGRAM_H_
-#define _PROGRAM_H_
+#ifndef _MEF_ASCENSOR_H_
+#define _MEF_ASCENSOR_H_
 
 /*==================[inclusiones]============================================*/
 
@@ -23,10 +23,16 @@ extern "C" {
 
 /*==================[declaraciones de funciones externas]====================*/
 
+// Inicializar la MEF de ascensor
+void ascensorInicializarMEF( void );
+
+// Actualizar la MEF de ascensor
+void ascensorActualizarMEF( void );
+
 /*==================[c++]====================================================*/
 #ifdef __cplusplus
 }
 #endif
 
 /*==================[end of file]============================================*/
-#endif /* _PROGRAM_H_ */
+#endif /* _MEF_ASCENSOR_H_ */

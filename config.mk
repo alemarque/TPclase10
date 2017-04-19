@@ -1,4 +1,4 @@
-APP=programa
+APP=entregableClase10Ascensor
 
 MODULES=app lpc_chip_43xx lpc_board_ciaa_edu_4337 sapi
 DEFINES=CORE_M4 __USE_LPCOPEN __USE_NEWLIB

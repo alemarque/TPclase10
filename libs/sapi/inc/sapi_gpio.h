@@ -90,6 +90,7 @@ typedef struct{
 bool_t gpioConfig( gpioMap_t pin, gpioConfig_t config );
 bool_t gpioRead( gpioMap_t pin );
 bool_t gpioWrite( gpioMap_t pin, bool_t value );
+bool_t gpioToggle( gpioMap_t pin );
 
 /*==================[cplusplus]==============================================*/
 

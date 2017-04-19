@@ -4,8 +4,8 @@
  * Fecha: 
  *===========================================================================*/
 
-#ifndef _PROGRAM_H_
-#define _PROGRAM_H_
+#ifndef _DRIVER_DISPLAYS_7_SEGMENTOS_H_
+#define _DRIVER_DISPLAYS_7_SEGMENTOS_H_
 
 /*==================[inclusiones]============================================*/
 
@@ -29,4 +29,4 @@ extern "C" {
 #endif
 
 /*==================[end of file]============================================*/
-#endif /* _PROGRAM_H_ */
+#endif /* _DRIVER_DISPLAYS_7_SEGMENTOS_H_ */

@@ -4,8 +4,8 @@
  * Fecha: 
  *===========================================================================*/
 
-#ifndef _PROGRAM_H_
-#define _PROGRAM_H_
+#ifndef _MEF_PUERTAS_H_
+#define _MEF_PUERTAS_H_
 
 /*==================[inclusiones]============================================*/
 
@@ -29,4 +29,4 @@ extern "C" {
 #endif
 
 /*==================[end of file]============================================*/
-#endif /* _PROGRAM_H_ */
+#endif /* _MEF_PUERTAS_H_ */

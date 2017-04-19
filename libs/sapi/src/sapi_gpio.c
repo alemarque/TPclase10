@@ -154,13 +154,12 @@ const pinConfigGpioLpc4337_t gpioPinsConfig[] = {
    { {1, 2}, FUNC0, {0, 9} },   /* 38   TEC3    TEC_3                 */
    { {1, 6}, FUNC0, {1, 9} },   /* 39   TEC4    TEC_4                 */
 
-   { {2,10}, FUNC0, {0,14} },   /* 40   LED1    LED1                  */
-   { {2,11}, FUNC0, {1,11} },   /* 41   LED2    LED2                  */
-   { {2,12}, FUNC0, {1,12} },   /* 42   LED3    LED3                  */
    { {2, 0}, FUNC4, {5, 0} },   /* 43   LEDR    LED0_R                */
    { {2, 1}, FUNC4, {5, 1} },   /* 44   LEDG    LED0_G                */
    { {2, 2}, FUNC4, {5, 2} },   /* 45   LEDB    LED0_B                */
-
+   { {2,10}, FUNC0, {0,14} },   /* 40   LED1    LED1                  */
+   { {2,11}, FUNC0, {1,11} },   /* 41   LED2    LED2                  */
+   { {2,12}, FUNC0, {1,12} },   /* 42   LED3    LED3                  */
 
    /* --------------------------------------------------------------- */
 	/*                             CIAA-NXP                            */
@@ -270,7 +269,7 @@ bool_t gpioConfig( gpioMap_t pin, gpioConfig_t config ){
          Chip_SCU_PinMux(
             pinNamePort,
             pinNamePin,
-            SCU_MODE_INACT | SCU_MODE_ZIF_DIS,
+            SCU_MODE_INACT | SCU_MODE_ZIF_DIS | SCU_MODE_INBUFF_EN,
             func
          );
          Chip_GPIO_SetDir( LPC_GPIO_PORT, gpioPort, ( 1 << gpioPin ), GPIO_OUTPUT );
@@ -305,6 +304,12 @@ bool_t gpioWrite( gpioMap_t pin, bool_t value ){
    Chip_GPIO_SetPinState( LPC_GPIO_PORT, gpioPort, gpioPin, value);
 
    return ret_val;
+}
+
+
+bool_t gpioToggle( gpioMap_t pin ){
+
+   return gpioWrite( pin, !gpioRead(pin) );
 }
 
 
